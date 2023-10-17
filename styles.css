@@ -1,0 +1,274 @@
+*{ 
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+header
+{
+width: 100%;
+padding: 0 5%;
+background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./images/homehdr.jpeg');
+height: 85vh;
+background-size: cover;
+background-position: center;
+min-height: 100px;
+}
+nav
+{
+width: 100%;
+display: flex;
+align-items: centre;
+justify-items: center;
+justify-content: space-between;
+padding: 20px 0;
+}
+nav div
+{
+display: inline-block;
+list-style: none;
+margin: 20px 5px;
+}
+
+
+nav .navmenu
+{
+float: left;
+list-style-type: none;
+margin-top: 45px;
+margin-right: 30px;
+min-height: 100px;
+font-size: 20px;
+
+}
+nav .navmenu li
+{
+
+display: inline-block;
+list-style: none;
+
+
+}
+
+nav .navmenu li a{
+text-decoration: none;
+color:beige;
+padding: 5px 13px;
+border: 1px solid transparent;
+transition: 0.5 ease;
+font-family: 'Poppins', sans-serif;
+}
+
+.navmenu li a:hover{
+background-color:beige;
+color: black;
+
+}
+.navmenu li.active a
+{
+background-color:beige;
+color: black;
+}
+.navmenu li.support a
+{
+background-color: #ED2B2A;
+color:white ;
+}
+.logo img
+{
+float: left;
+}
+.title
+{
+padding-top: 15px;
+padding-left: 0;
+padding-right: 30px;
+color: beige;
+font-size: 22px;
+
+}
+#sch
+{
+font-size: 18px;
+}
+ .hamburger{
+  display: none;
+  cursor: pointer;
+ }
+ .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: beige;
+ }
+
+ .quote
+ {
+  text-align: left;
+
+ }
+  
+ .quote h1{
+  color: beige;
+  font-size: 70px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+ }
+ .quote h3{
+  color: beige;
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+  font-weight: lighter;
+ }
+
+ #btn1
+ {
+  background-color: #ED2B2A;
+  color:white ;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  font-size:20px;
+  font-family: 'Poppins', sans-serif;
+
+ }
+
+ body
+ {
+   margin: 0px;
+   text-align: center;
+   background-color: #D8D9DA;
+
+ }
+ .text
+ {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: black;
+ }
+ 
+ p{
+  padding: 35px 150px;
+  font-family: 'Poppins', sans-serif;
+  color: darkslategray;
+  text-align: center;
+  font-size: 20px;
+
+ }
+footer
+ {
+  background-color: darkslategray;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding-left: 20px;
+  color: beige;
+ }
+ /* Styles for mobile phones */
+@media (max-width: 767px) {
+  header {
+    height: 65vh;
+    background-position: center;
+    
+  }
+  .title{
+    font-size: 10px;
+    padding: 0;
+    padding-top: 15px;
+  }
+  #sch{
+    font-size: 10px;
+  }
+
+  .hamburger{
+    display: block;
+    padding-top: 15px;
+    padding-right: 1px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navmenu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap:0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.959);
+    width: 100%;
+    text-align: center;
+  }
+
+  .navmenu li{
+    margin: 16px 0;
+  }
+  .navmenu li a:hover{
+    background-color:beige;
+    color: black;
+  }
+  .navmenu.active{
+    left: 0;
+  }
+ 
+  
+
+
+.quote h1 {
+    font-size: 30px;
+  }
+
+  .quote h3 {
+    font-size: 20px;
+  }
+  #btn1{
+    font-size: 10px;
+  }
+
+  .text {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  p {
+    padding: 15px;
+    font-size: 15px;
+    text-justify: auto;
+  }
+  footer{
+    font-size: 7px;
+  }
+}
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    height: 70vh;
+  }
+
+  .quote h1 {
+    font-size: 50px;
+  }
+
+  .quote h3 {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  p {
+    padding: 25px 50px;
+    font-size: 18px;
+  }
+}
